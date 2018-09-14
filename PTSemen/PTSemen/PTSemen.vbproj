@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{91F5BF6E-65D3-4451-B557-C8F9F6DF991B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>PTSemen.My.MyApplication</StartupObject>
+    <RootNamespace>PTSemen</RootNamespace>
+    <AssemblyName>PTSemen</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>PTSemen.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>PTSemen.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>..\packages\iTextSharp.5.5.12\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ControlFinancial\financial_produk.Designer.vb">
+      <DependentUpon>financial_produk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ControlFinancial\financial_produk.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlFinancial\invoice_purchase_order.Designer.vb">
+      <DependentUpon>invoice_purchase_order.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ControlFinancial\invoice_purchase_order.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlFinancial\request_raw_material.Designer.vb">
+      <DependentUpon>request_raw_material.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ControlFinancial\request_raw_material.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlInventory\daftar_raw_material.Designer.vb">
+      <DependentUpon>daftar_raw_material.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ControlInventory\daftar_raw_material.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlInventory\daftar_semen.Designer.vb">
+      <DependentUpon>daftar_semen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ControlInventory\daftar_semen.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlInventory\good_issue_.Designer.vb">
+      <DependentUpon>good_issue_.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ControlInventory\good_issue_.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlInventory\good_issue_order.Designer.vb">
+      <DependentUpon>good_issue_order.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ControlInventory\good_issue_order.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlInventory\good_receipt.Designer.vb">
+      <DependentUpon>good_receipt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ControlInventory\good_receipt.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlFinancial\issue_production.Designer.vb">
+      <DependentUpon>issue_production.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ControlFinancial\issue_production.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlProduction\production_order.Designer.vb">
+      <DependentUpon>production_order.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ControlProduction\production_order.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlProduction\production_table.Designer.vb">
+      <DependentUpon>production_table.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ControlProduction\production_table.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlSales\daftar_invoice.Designer.vb">
+      <DependentUpon>daftar_invoice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ControlSales\daftar_invoice.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlSales\search_data_orderan.Designer.vb">
+      <DependentUpon>search_data_orderan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ControlSales\search_data_orderan.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlSales\order.Designer.vb">
+      <DependentUpon>order.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ControlSales\order.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlSales\edit_data.Designer.vb">
+      <DependentUpon>edit_data.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ControlSales\edit_data.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlVendor\daftar_vendor.Designer.vb">
+      <DependentUpon>daftar_vendor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ControlVendor\daftar_vendor.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlVendor\purchase_order.Designer.vb">
+      <DependentUpon>purchase_order.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ControlVendor\purchase_order.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard\Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard\LoginVendor.Designer.vb">
+      <DependentUpon>LoginVendor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\LoginVendor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard\MenuUtamaFinancial.Designer.vb">
+      <DependentUpon>MenuUtamaFinancial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\MenuUtamaFinancial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard\MenuUtamaInventory.Designer.vb">
+      <DependentUpon>MenuUtamaInventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\MenuUtamaInventory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard\MenuUtamaProduction.Designer.vb">
+      <DependentUpon>MenuUtamaProduction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\MenuUtamaProduction.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard\MenuUtamaVendor.Designer.vb">
+      <DependentUpon>MenuUtamaVendor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\MenuUtamaVendor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data\database.vb" />
+    <Compile Include="Dashboard\MenuUtamaSales.Designer.vb">
+      <DependentUpon>MenuUtamaSales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\MenuUtamaSales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.vb">
+      <DependentUpon>Home.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Home.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ControlFinancial\financial_produk.resx">
+      <DependentUpon>financial_produk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlFinancial\invoice_purchase_order.resx">
+      <DependentUpon>invoice_purchase_order.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlFinancial\request_raw_material.resx">
+      <DependentUpon>request_raw_material.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlInventory\daftar_raw_material.resx">
+      <DependentUpon>daftar_raw_material.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlInventory\daftar_semen.resx">
+      <DependentUpon>daftar_semen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlInventory\good_issue_.resx">
+      <DependentUpon>good_issue_.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlInventory\good_issue_order.resx">
+      <DependentUpon>good_issue_order.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlInventory\good_receipt.resx">
+      <DependentUpon>good_receipt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlFinancial\issue_production.resx">
+      <DependentUpon>issue_production.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlProduction\production_order.resx">
+      <DependentUpon>production_order.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlProduction\production_table.resx">
+      <DependentUpon>production_table.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlSales\daftar_invoice.resx">
+      <DependentUpon>daftar_invoice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlSales\search_data_orderan.resx">
+      <DependentUpon>search_data_orderan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlSales\order.resx">
+      <DependentUpon>order.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlSales\edit_data.resx">
+      <DependentUpon>edit_data.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlVendor\daftar_vendor.resx">
+      <DependentUpon>daftar_vendor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlVendor\purchase_order.resx">
+      <DependentUpon>purchase_order.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\LoginVendor.resx">
+      <DependentUpon>LoginVendor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\MenuUtamaFinancial.resx">
+      <DependentUpon>MenuUtamaFinancial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\MenuUtamaInventory.resx">
+      <DependentUpon>MenuUtamaInventory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\MenuUtamaProduction.resx">
+      <DependentUpon>MenuUtamaProduction.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\MenuUtamaSales.resx">
+      <DependentUpon>MenuUtamaSales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\MenuUtamaVendor.resx">
+      <DependentUpon>MenuUtamaVendor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
